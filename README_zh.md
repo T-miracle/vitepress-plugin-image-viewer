@@ -34,7 +34,6 @@ export default {
     },
     setup() {
         // 获取路由
-        const { frontmatter } = useData();
         const route = useRoute();
         // 使用
         imageViewer(route);

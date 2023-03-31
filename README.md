@@ -36,7 +36,6 @@ export default {
     },
     setup() {
         // Get route
-        const { frontmatter } = useData();
         const route = useRoute();
         // Using
         imageViewer(route);
