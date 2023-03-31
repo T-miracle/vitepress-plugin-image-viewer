@@ -13,6 +13,10 @@
     "imageViewer",
     "vitepress-plugin"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/T-miracle/vitepress-plugin-image-viewer"
+  },
   "author": "T-miracle",
   "license": "ISC",
   "dependencies": {
