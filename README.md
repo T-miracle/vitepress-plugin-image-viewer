@@ -4,6 +4,8 @@ EN | [中文文档](README_zh.md)
 
 # vitepress-plugin-image-viewer
 
+![](demo.gif)
+
 > A vitepress image viewer plugin based on viewerjs
 
 ## Install
