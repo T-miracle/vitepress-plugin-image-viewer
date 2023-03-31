@@ -2,6 +2,8 @@
   "name": "vitepress-plugin-image-viewer",
   "version": "1.0.0",
   "description": "image viewer for vitepress",
+  "type": "module",
+  "types": "./lib/viewer.d.ts",
   "main": "./lib/viewer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
