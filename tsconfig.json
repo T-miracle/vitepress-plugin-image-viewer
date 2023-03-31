@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "jsx": "preserve",
+        "module": "ESNext",
+        "strict": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "lib": [
+            "ESNext",
+            "DOM"
+        ],
+        "noImplicitAny": true,
+        "skipLibCheck": true,
+        "declaration": true,
+        "incremental": false,
+        "emitDeclarationOnly": false,
+        "outDir": "./lib",
+        "declarationDir": "./lib"
+    },
+    "include": [
+        "lib/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
