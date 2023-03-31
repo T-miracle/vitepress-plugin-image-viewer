@@ -58,7 +58,7 @@ export default {
     Configuration options 
     (For detailed configuration, please refer to [viewerjs option](https://github.com/fengyuanchen/viewerjs#toolbar), there is already a default configuration, which is not required)
 
-## 扩展
+## Component
 
 `vImageViewer` component can be compiled into a button, click this button to pop up the picture, use as follows:
 

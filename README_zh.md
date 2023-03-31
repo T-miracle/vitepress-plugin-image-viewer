@@ -55,7 +55,7 @@ export default {
 
   配置选项（详细配置请看[viewerjs option](https://github.com/fengyuanchen/viewerjs#toolbar)，已有默认配置，这不是必需的）
 
-## 扩展
+## 扩展组件
 
 `vImageViewer` 组件能编译成一个按钮，点击这个按钮能弹出图片，使用方式如下：
 
