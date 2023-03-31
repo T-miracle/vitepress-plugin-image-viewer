@@ -2,7 +2,7 @@
 
 # vitepress-plugin-image-viewer
 
-![](demo.gif)
+![](./demo.webp)
 
 > 一款基于 viewerjs 的 vitepress 图片查看器插件
 
