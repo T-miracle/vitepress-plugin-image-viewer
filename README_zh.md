@@ -4,7 +4,7 @@
 
 ![](./demo.webp)
 
-> 一款基于 viewerjs 的 vitepress 图片查看器插件
+> 一款基于 viewerjs 的 vitepress 图片查看器（图片预览）插件
 
 ## 安装
 
