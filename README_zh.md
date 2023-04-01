@@ -1,10 +1,10 @@
-# README_zh
-
 # vitepress-plugin-image-viewer
+
+[![npm](https://img.shields.io/npm/v/vitepress-plugin-image-viewer?color=green)](https://www.npmjs.com/package/vitepress-plugin-image-viewer)
 
 ![](./demo.webp)
 
-> 一款基于 viewerjs 的 vitepress 图片查看器插件
+> 一款基于 viewerjs 的 vitepress 图片查看器（图片预览）插件
 
 ## 安装
 
