@@ -1,6 +1,6 @@
-# README_zh
-
 # vitepress-plugin-image-viewer
+
+[![npm](https://img.shields.io/npm/v/vitepress-plugin-image-viewer?color=green)](https://www.npmjs.com/package/vitepress-plugin-image-viewer)
 
 ![](./demo.webp)
 
