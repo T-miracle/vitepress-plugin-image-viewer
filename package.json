@@ -1,6 +1,6 @@
 {
   "name": "vitepress-plugin-image-viewer",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "image viewer for vitepress",
   "type": "module",
   "types": "./lib/viewer.d.ts",
