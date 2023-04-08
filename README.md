@@ -65,5 +65,12 @@ export default {
 
 ```vue
 <vImageViewer src="/image/demo.png" alt="this is a demo image" :inline="false"/> 
-// `inline` is set to `true`, it will become an inline element, it is not required, default `false`
 ```
+
+`inline` is set to `true`, it will become an inline element, it is not required, default `false`
+
+## more vitepress plugins
+
+You may be interested in these plugins：
+[Click me to view more vitepress plugins](https://github.com/T-miracle/vitepress-plugins)
+

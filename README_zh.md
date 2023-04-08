@@ -65,3 +65,8 @@ export default {
 ```
 
 `inline` 属性设置为 `true`，那么它会变成一个行内元素，他不是必需的，默认为 `false`
+
+## 更多vitepress插件
+
+这些插件你可能会感兴趣：[点我查看更多vitepress插件](https://github.com/T-miracle/vitepress-plugins)
+
