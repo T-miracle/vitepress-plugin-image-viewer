@@ -44,6 +44,7 @@ const setViewer = (el: string = '.vp-doc img', option?: Viewer.Options) => {
  */
 const imageViewer = (route: Route, el?: string, option?: Viewer.Options) => {
     onMounted(() => {
+        console.log(`初始化预览器`)
         setViewer(el, option);
     })
     watch(() => route.path, () => nextTick(() => {
