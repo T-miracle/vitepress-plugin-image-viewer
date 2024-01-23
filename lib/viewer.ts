@@ -1,6 +1,6 @@
 import Viewer from 'viewerjs';
 import { nextTick, onMounted, watch } from 'vue';
-import { Route } from 'vitepress';
+import type { Route } from 'vitepress';
 
 /**
  * 给图片添加预览功能

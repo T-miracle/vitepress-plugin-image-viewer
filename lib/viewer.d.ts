@@ -1,5 +1,5 @@
 import Viewer from 'viewerjs';
-import { Route } from 'vitepress';
+import type { Route } from 'vitepress';
 /**
  * set imageViewer
  * 设置图片查看器
