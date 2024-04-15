@@ -15,12 +15,17 @@ EN | [中文文档](README_zh.md)
 npm i vitepress-plugin-image-viewer
 // yarn
 yarn add vitepress-plugin-image-viewer
+// pnpm
+pnpm add vitepress-plugin-image-viewer
+// Tip: If you use pnpm to install, you need to install viewerjs additionally.
+pnpm add viewerjs
 ```
 
 ## Usage
 
+In `.vitepress/theme/index`
+
 ```js
-// .vitepress/theme/index.js
 import DefaultTheme from 'vitepress/theme';
 import 'viewerjs/dist/viewer.min.css';
 import imageViewer from 'vitepress-plugin-image-viewer';
@@ -52,7 +57,7 @@ export default {
 
 - el
   
-    CSS selector (Default `.vp-doc img`, can be empty, this is not required)
+    CSS selector (Default `.vp-doc`, can be empty, this is not required)
 
 - option
 

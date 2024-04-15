@@ -2,10 +2,12 @@ import Viewer from 'viewerjs';
 import { nextTick, onMounted, watch } from 'vue';
 import type { Route } from 'vitepress';
 
+let viewer: Viewer | null = null;
+
 /**
  * 给图片添加预览功能
  */
-const setViewer = (el: string = '.vp-doc img', option?: Viewer.Options) => {
+const setViewer = (el: string = '.vp-doc', option?: Viewer.Options) => {
     // 默认配置
     const defaultBaseOption: Viewer.Options = {
         navbar: false,
@@ -19,18 +21,10 @@ const setViewer = (el: string = '.vp-doc img', option?: Viewer.Options) => {
             oneToOne: 4
         }
     }
-    document.querySelectorAll(el).forEach((item: Element) => {
-        (item as HTMLElement).onclick = () => {
-            const viewer = new Viewer(<HTMLElement>item, {
-                ...defaultBaseOption,
-                ...option,
-                hide(e) {
-                    viewer.destroy();
-                }
-            });
-            viewer.show()
-        }
-    });
+    viewer = new Viewer(<HTMLElement>document.querySelector(el), {
+        ...defaultBaseOption,
+        ...option
+    })
 };
 
 /**
@@ -44,10 +38,10 @@ const setViewer = (el: string = '.vp-doc img', option?: Viewer.Options) => {
  */
 const imageViewer = (route: Route, el?: string, option?: Viewer.Options) => {
     onMounted(() => {
-        console.log(`初始化预览器`)
         setViewer(el, option);
     })
     watch(() => route.path, () => nextTick(() => {
+        viewer?.destroy();
         setViewer(el, option);
     }));
 }

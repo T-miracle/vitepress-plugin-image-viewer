@@ -9,16 +9,21 @@
 ## 安装
 
 ```shell
-// npm 
+# npm 
 npm i vitepress-plugin-image-viewer
-// yarn
+# yarn
 yarn add vitepress-plugin-image-viewer
+# pnpm
+pnpm add vitepress-plugin-image-viewer
+# 提示：如果使用 pnpm 安装，还需要额外安装 viewerjs
+pnpm add viewerjs
 ```
 
 ## 使用
 
+在 `.vitepress/theme/index` 中
+
 ```js
-// .vitepress/theme/index.js
 import DefaultTheme from 'vitepress/theme';
 import 'viewerjs/dist/viewer.min.css';
 import imageViewer from 'vitepress-plugin-image-viewer';
@@ -50,7 +55,7 @@ export default {
 
 - el
 
-  CSS选择器（默认`.vp-doc img`，可以为空，这不是必需的）
+  CSS选择器（默认`.vp-doc`，可以为空不填写，这不是必需的）
 
 - option
 
