@@ -20,7 +20,8 @@
         "declarationDir": "./lib"
     },
     "include": [
-        "lib/*.ts"
+        "lib/*.ts",
+        "lib/*.vue"
     ],
     "exclude": [
         "node_modules"

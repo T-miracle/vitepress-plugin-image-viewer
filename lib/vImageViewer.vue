@@ -1,21 +1,17 @@
 <template>
     <div class="image-viewer" :style="inline ? {display: 'inline-block', margin: 0} : {}">
         <img class="hide-image-element" :src="src" alt="">
-        <button @click="showImage">{{ alt }}</button>
+        <button @click.stop="showImage">{{ alt }}</button>
     </div>
 </template>
 
 <script setup lang="ts">
-    import setViewer from './viewer';
-    import { onMounted } from 'vue';
-    import { useRoute } from 'vitepress';
+    import 'viewerjs/dist/viewer.min.css'
 
-    const route = useRoute()
-
-    const props = withDefaults(defineProps<{
+    withDefaults(defineProps<{
         alt: string
         src: string
-        inline: boolean
+        inline?: boolean
     }>(), {
         inline: false
     });
@@ -23,33 +19,27 @@
     const showImage = (e: Event) => {
         ((e.target as HTMLElement).previousElementSibling as HTMLElement).click();
     };
-
-    onMounted(() => {
-        setViewer(route,'.hide-image-element');
-    });
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="css">
     .image-viewer {
         margin: 20px 0;
-
-        img {
-            display: none;
-        }
-
-        button {
-            display: block;
-            background-color: #ff6348;
-            border-radius: 4px;
-            padding: 5px 10px;
-            margin: 10px 15px;
-            color: white;
-        }
     }
 
-    .dark {
-        .image-viewer > button {
-            background-color: #5d240f;
-        }
+    .image-viewer img {
+        display: none;
+    }
+
+    .image-viewer button {
+        display: block;
+        background-color: #ff6348;
+        border-radius: 4px;
+        padding: 5px 10px;
+        margin: 10px 15px;
+        color: white;
+    }
+
+    .dark .image-viewer > button {
+        background-color: #5d240f;
     }
 </style>
