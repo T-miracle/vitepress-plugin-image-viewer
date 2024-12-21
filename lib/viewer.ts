@@ -21,10 +21,13 @@ const setViewer = (el: string = '.vp-doc', option?: Viewer.Options) => {
             oneToOne: 4
         }
     }
-    viewer = new Viewer(<HTMLElement>document.querySelector(el), {
-        ...defaultBaseOption,
-        ...option
-    })
+    const container = document.querySelector(el);
+    if (container) {
+        viewer = new Viewer(container as HTMLElement, {
+            ...defaultBaseOption,
+            ...option
+        });
+    }
 };
 
 /**
